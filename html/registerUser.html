@@ -1,6 +1,6 @@
 <html>
     <head>
-        <title>Floreria Flores</title>
+        <title> Dulces Tulipanes</title>
         <script src="../js/bootstrap.bundle.js"></script>
         <link href="../css/bootstrap.css" rel="stylesheet" id="bootstrap-css">
         <style>
@@ -13,14 +13,14 @@
   
 <div id="formContentRegister">
     <div class="fadeIn first">
-      <img style="height: 100px; width: 100px;" src="../images/florLogin.png" id="icon" alt="Floreria Flores" />
+      <img style="height: 100px; width: 100px;" src="../images/logo.jpeg" id="icon" alt="" />
     </div>
     <br>
     <div class="fadeIn first">
-        <span class="h4"> Registro de usuario </span>
+        <span class="h4"> Registro de Usuario </span>
     </div>
     <br>
-    <form class="was-validated register">
+    <form class="was-validated register" action="../login.html" method="post"> 
       <div class="col-md">
         <div class="form-outline">
           <input type="text" id="nombre" class="fadeIn second corto" name="nombre" placeholder="Nombre" required>
@@ -37,41 +37,40 @@
       <br>
       <div class="col-md">
         <div class="form-outline">
-          <input type="text" id="direccion" class="fadeIn second mediano" name="direccion" placeholder="Direccion" required>
-          <div class="invalid-feedback">*Direccion es requerido</div>
+          <input type="text" id="direccion" class="fadeIn second mediano" name="direccion" placeholder="Direcci&oacute;n" required>
+          <div class="invalid-feedback">*Dirección es requerido</div>
         </div>
       </div>
       <br>
       <div class="col-md">
         <div class="form-outline">
-          <input type="text" id="numeroDocumento" class="fadeIn second corto" name="numeroDocumento" placeholder="Numero de Documento" required>
-          <div class="invalid-feedback">*Numero de documento es requerido</div>
+          <input type="text" id="numeroDocumento" class="fadeIn second corto" name="numeroDocumento" placeholder="Rut" required>
+          <div class="invalid-feedback">*Rut es requerido</div>
         </div>
       </div>
       <br>
       <div class="col-md">
         <div class="form-outline">
-          <input type="text" id="celular" class="fadeIn second corto" name="celular" placeholder="Número de Telefo&acute" required>
-          <div class="invalid-feedback">* Telefo&acute;no es requerido</div>
+          <input type="text" id="celular" class="fadeIn second corto" name="celular" placeholder="N&uacute;mero de Telef&oacute;no" required>
+          <div class="invalid-feedback">*Teléfono es requerido</div>
         </div>
       </div>
       <br>
       <div class="col-md">
         <div class="form-outline">
-          <input type="text" id="email" class="fadeIn second corto" name="email" placeholder="Email" required>
-          <div class="invalid-feedback">*Email es requerido</div>
+          <input type="text" id="email" class="fadeIn second corto" name="email" placeholder="Mail" required>
+          <div class="invalid-feedback">*Mail es requerido</div>
         </div>
       </div>
       <br>
       <div class="col-md">
         <div class="form-outline">
           <input type="text" id="password" class="fadeIn second corto" name="password" placeholder="Contraseña" required>
-          <div class="invalid-feedback">*Password es requerido</div>
+          <div class="invalid-feedback">*Contraseña es requerido</div>
         </div>
       </div>
       <br>
-
-      <input type="submit" class="fadeIn fourth" value="Continuar">
+     <input type="submit" class="fadeIn fourth" value="Continuar">
     </form>
     
   </div>
