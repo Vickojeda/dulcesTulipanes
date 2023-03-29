@@ -1,46 +1,48 @@
 <html>
-    <head>
-        <title>Dulces Tulipanes</title>
-        <script src="js/bootstrap.bundle.js"></script>
-        <link href="css/bootstrap.css" rel="stylesheet" id="bootstrap-css">
-        <style>
-            @import "css/login.css";
-        </style>
-        
-    </head>
+
+<head>
+  <title>Dulces Tulipanes</title>
+  <script src="js/bootstrap.bundle.js"></script>
+  <script src="js/login.js"></script>
+  <link href="css/bootstrap.css" rel="stylesheet" id="bootstrap-css">
+  <style>
+    @import "css/login.css";
+  </style>
+
+</head>
+
 <body>
-<div class="wrapper fadeInDown">
-  <div id="formContent">
-    <div class="fadeIn first">
-      <img style="height: 100px; width: 100px;" src="images/logo.jpeg" id="icon" alt="" />
-    </div>
-
-    <form class="was-validated">
-      <div class="col-md">
-        <div class="form-outline">
-          <input type="text" id="usuario" class="fadeIn second" name="login" placeholder="Usuario" required>
-          <div class="invalid-feedback">*Usuario es requerido</div>
+  <div class="wrapper fadeInDown">
+    <div id="formContent">
+      <div class="fadeIn first">
+        <img style="height: 100px; width: 100px;" src="images/logo.jpeg" id="icon" alt="" />
+      </div>
+      <form class="was-validated" action="post">
+        <div class="col-md">
+          <div class="form-outline">
+            <input type="text" id="user" class="fadeIn second" name="user" placeholder="Usuario" required>
+            <div class="invalid-feedback">*Usuario es requerido</div>
+          </div>
         </div>
+
+        <div class="col-md">
+          <div class="form-outline">
+            <input type="text" id="password" class="fadeIn third" name="password" placeholder="Contrase&ntilde;a" required>
+            <div class="invalid-feedback">*Contrase&ntilde;a es requerido</div>
+          </div>
+        </div>
+
+        <input type="submit" class="fadeIn fourth" value="Entrar" onClick="auth(event)">
+      </form>
+      <div id="formFooter">
+        <a class="underlineHover" href="html/recoveryPass.html">&iquest;Olvidaste tu contrase&ntilde;a?</a>
+      </div>
+      <div id="formFooter">
+        <a class="underlineHover" href="html/registerUser.html">Registrate aqu&iacute;</a>
       </div>
 
-      <div class="col-md">
-        <div class="form-outline">
-          <input type="text" id="contraseña" class="fadeIn third" name="login" placeholder="Contraseña" required>
-          <div class="invalid-feedback">*Contraseña es requerido</div>
-        </div>
-      </div>
-
-      <input type="submit" class="fadeIn fourth" value="Log In">
-    </form>
-
-    <div id="formFooter">
-      <a class="underlineHover" href="html/recoveryPass.html">¿Olvidaste tu contraseña?</a>
     </div>
-    <div id="formFooter">
-      <a class="underlineHover" href="html/registerUser.html">Registrate aqu&iacute;</a>
-    </div>
-    
   </div>
-</div>
 </body>
+
 </html>
